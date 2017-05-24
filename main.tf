@@ -70,7 +70,7 @@ resource "ibmcloud_infra_virtual_guest" "vj_debian_small_virtual_guest" {
 
 
 
-data "ibmcloud_infra_ssh_key" "vj_query_ssh"{
+/*data "ibmcloud_infra_ssh_key" "vj_query_ssh"{
     label = "VJ Public Key1"
     most_recent="true"
 }
@@ -86,6 +86,6 @@ data "ibmcloud_infra_virtual_guest" "vj_query_vm" {
 
 output "vmstatus" {
 	 value = "${data.ibmcloud_infra_virtual_guest.vj_query_vm.status}"
-}
+}*/
 
 
