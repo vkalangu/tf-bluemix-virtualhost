@@ -4,6 +4,25 @@ provider "ibmcloud" {
   softlayer_account_number = "${var.slaccountnum}"
 }
 
+##############################################################################
+# Variables
+##############################################################################
+# Required for the IBM Cloud provider
+variable ibmid {
+  type = "string"
+  description = "Your IBM-ID."
+}
+# Required for the IBM Cloud provider
+variable ibmidpw {
+  type = "string"
+  description = "The password for your IBM-ID."
+}
+# Required to target the correct SL account
+variable slaccountnum {
+  type = "string"
+  description = "Your Softlayer account number."
+}
+
 variable "hostname" {
   description = "Hostname of the virtual instance (small flavor) to be deployed"
   default = "VJdebiansmall"
